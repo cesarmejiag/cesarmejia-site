@@ -1,0 +1,16 @@
+{
+  "name": "cesarmejia-site",
+  "private": true,
+  "scripts": {
+    "dev": "lerna run dev --parallel",
+    "dev-web": "lerna run dev --scope=web",
+    "build-web": "lerna bootstrap && (cd web && npm run build)",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "web"
+  ],
+  "devDependencies": {
+    "lerna": "^6.6.2"
+  }
+}
